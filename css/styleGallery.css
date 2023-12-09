@@ -1,0 +1,632 @@
+body{
+background: #2e2e2e;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header2{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+background-image: url(/img/R.jpg);
+background-size: 1080px;
+background-attachment: fixed;
+
+}
+header:hover{
+color: #fff;
+}
+
+.course{
+    width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+
+}
+
+
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+  
+    
+}
+
+
+.course p{
+    color: #333333;
+    font-size: 14px;
+line-height: 22px;
+font-weight: 300;
+padding: 10px;
+
+}
+
+
+.course h4{
+ color: #3b3939;
+ font-size: 45px;
+}
+
+
+
+
+.header1{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+background-image: url(/img/OIP\ \(3\).jpg);
+background-size: 1080px;
+background-attachment: fixed;
+
+}
+h2{
+    margin-top: 70px;
+    color: #fff;
+    font-size: 20px;
+}
+
+h2:hover{
+  color:dodgerblue;
+}
+
+.course img{
+    height: 88px;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .course{
+        padding:20px ;
+    }
+}
+
+
+
+.package{
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    
+
+}
+
+.container .card
+{
+    
+    background: #60dbc759;
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+    inset -5px -5px 5px rgba(255,255,255,0.5),
+     5px 5px 5px rgba(0,0,0,0.05),
+     -5px -5px 5px rgba(255,255,255,0.5);
+     border-radius: 15px;
+     margin: 30px;
+             
+}
+.container #card1{
+    background-image: url(/img/cloths.jpeg);
+}
+
+.container #card2{
+    background-image: url(/img/access.jpeg);
+}
+.container #card3{
+    background-image: url(/img/weding.jpeg);
+    background-size: 290px;
+}
+
+.container #card4{
+    background-image: url(/img/graduate.jpeg);
+    background-size: 280px;
+}
+
+.container #card5{
+    background-image: url(/img/event.webp);
+    background-size: 660px;
+}
+
+
+
+
+.container .card .box2{
+    position: absolute;
+    top: 20px;
+    left: 20px ;
+    right: 20px ;
+    bottom: 20px ;
+    background: #ebf5fc98;
+    box-shadow:0 10px 20px  rgba(0,0,0,0.01);
+    border-radius: 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .card:hover .box2{
+    transform:translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg,#f4f4f0,  rgba(30, 143, 255, 0.591));
+}
+
+.container .card .box2 .content{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.container .card .box2 .content h2{
+position: absolute;
+top: -10px;
+right: 30px;
+font-size: 8em;
+color: rgba(0, 0, 0, 0.034);
+transform: 0.5s;
+pointer-events: none;
+
+}
+.container .card:hover .box2 .content h2{
+    color: #3f6e5548;
+}
+
+.container .card:hover .box2 .content h3{
+    color: #fff;
+}
+
+.container .card:hover .box2 .content p{
+    color: #fff;
+}
+
+.container .card .box2 .content h3{
+    color: #3b3b3b;
+    font-size: 1.8em;
+    z-index: 1;
+    transform: 0.5s;
+}
+
+.container .card .box2 .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #333232;
+    z-index: 1;transition: 0.5s;
+
+
+}
+
+.container .card .box2 .content a{
+position: relative;
+display: inline-block;
+padding: 8px 20px;
+background: #3b3939;
+margin-top: 15px;
+border-radius: 20px;
+color: #fff;
+text-decoration: none;
+font-weight: 400;
+box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+
+.container .card:hover .box2 .content a{
+    background:  dodgerblue;
+}
+
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cardp{
+position: relative;
+width: 750px;
+height: 450px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #333333;
+overflow: hidden;
+border-radius: 20px
+}
+
+.cardp::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 150%;
+    background: linear-gradient(dodgerblue,dodgerblue);
+animation: animate1 4s linear infinite;
+}
+
+.cardp::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background:  #2e2e2e;
+    border-radius: 16px
+
+}
+
+@keyframes animate1 {
+    0%
+    {
+transform: rotate(0deg);
+    }
+    100%
+    {
+transform: rotate(360deg);
+    }
+}
+
+
+
+
+.containerp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin-bottom: 100px;
+    
+    
+
+}
+
+.containerp .cardp
+{
+    position: relative;
+    z-index: 10;
+    background: #f9fffe59;
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+    inset -5px -5px 5px rgba(255,255,255,0.5),
+     5px 5px 5px rgba(0,0,0,0.05),
+     -5px -5px 5px rgba(255,255,255,0.5);
+     border-radius: 15px;
+     margin: 30px;
+     
+             
+}
+
+
+.containerp .cardp .box2p{
+    position: relative;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 20px ;
+    right: 20px ;
+    bottom: 20px ;
+    background: #ebf5fc98;
+    box-shadow:0 10px 20px  rgba(0,0,0,0.01);
+    border-radius: 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.containerp .cardp .box2p .contentp{
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.containerp .cardp .box2p .contentp h2{
+    position: relative;
+    z-index: 10;
+
+top: -10px;
+right: 30px;
+font-size: 8em;
+color: rgba(0, 0, 0, 0.034);
+transform: 0.5s;
+pointer-events: none;
+
+}
+
+.containerp .cardp .box2p .contentp h3{
+    position: relative;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    z-index: 1;
+    transform: 0.5s;
+}
+
+
+.containerp .cardp .box2p .contentp p{
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+    font-weight: 300;
+    color: #333232;
+    z-index: 1;transition: 0.5s;
+
+
+}
+
+.containerp .cardp .box2p .contentp a{
+    position: relative;
+    z-index: 10;
+position: relative;
+display: inline-block;
+padding: 8px 20px;
+background:  #3b3939;
+margin-top: 15px;
+border-radius: 20px;
+color: #fff;
+text-decoration: none;
+font-weight: 400;
+box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+
+.containerp .cardp:hover .box2p .contentp a{
+    position: relative;
+    z-index: 10;
+    background: dodgerblue;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .mainHeader a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mainHeader ul {
+    list-style: none;
+  }
+  .mainHeader .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Utility Classes */
+  .mainHeader .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .mainHeader .btn-primary {
+    border: 1px solid #fff;
+  }
+  
+  .mainHeader .btn-primary:hover{
+    background:  dodgerblue;
+  }
+  
+  .mainHeader .primary-text {color:  dodgerblue;
+  }
+  
+  /* Header Start */
+  .mainHeader {
+    height: 90vh;
+    background-size: 1200px;
+    background: url(/img/Vintage2.jpg) center center/cover no-repeat;
+    position: relative;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  
+  #navbar img {
+    width: 80px;
+    margin-left: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-right: 100px;
+  }
+  
+  nav ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid  dodgerblue;
+  }
+  
+  .mainHeader .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%; 
+  }
+  
+  .mainHeader::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+  }
+  
+  .mainHeader .content h1 {
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .mainHeader .content p {
+    color: #fff;
+    margin: 20px 0 40px;
+  }
+  
+  .mainHeader * {
+   
+    z-index: 10;
+  }
+  /* Header End */
+  
+  .packageSection{
+   background: #fff;
+  }
+
+  .CoursesSection{
+   background: #fff;  }
+
+  
+  footer {
+  
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .socialGroup{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  
+  .socialGroup a{
+    width: 35px;
+    height: 35px;
+    text-decoration: none ;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: 0.2s;
+  }
+  .socialGroup a i{
+    color: #ddd;
+    font-size: 25px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    transition-delay: 0.2s;
+  }
+  .socialGroup a:hover{
+    transform: translateY(-10px);
+    background-color: transparent;
+    background-color: dodgerblue;
+  }
+  footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animate{
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+
+    #navbar {
+        flex-direction: column;
+      }
+    }
