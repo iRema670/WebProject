@@ -2,12 +2,13 @@ body{
 background: #2e2e2e;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .header2{
 width: 80%;
 margin: auto;
 text-align: center;
 padding-top: 100px;
-background-image: url(/img/R.jpg);
+background-image: url(back4.webp);
 background-size: 1080px;
 background-attachment: fixed;
 
@@ -35,7 +36,7 @@ h1{
 
 
 .course p{
-    color: #333333;
+    color: #fff;
     font-size: 14px;
 line-height: 22px;
 font-weight: 300;
@@ -45,7 +46,7 @@ padding: 10px;
 
 
 .course h4{
- color: #3b3939;
+ color: #fff;
  font-size: 45px;
 }
 
@@ -57,7 +58,7 @@ width: 80%;
 margin: auto;
 text-align: center;
 padding-top: 100px;
-background-image: url(/img/OIP\ \(3\).jpg);
+background-image: url(back2.jpg);
 background-size: 1080px;
 background-attachment: fixed;
 
@@ -68,18 +69,11 @@ h2{
     font-size: 20px;
 }
 
-h2:hover{
-  color:dodgerblue;
-}
+
 
 .course img{
     height: 88px;
 }
-
-
-
-
-
 
 
 @media (max-width:768px) {
@@ -125,24 +119,24 @@ h2:hover{
              
 }
 .container #card1{
-    background-image: url(/img/cloths.jpeg);
+    background-image: url(cloths.jpeg);
 }
 
 .container #card2{
-    background-image: url(/img/access.jpeg);
+    background-image: url(access.jpeg);
 }
 .container #card3{
-    background-image: url(/img/weding.jpeg);
+    background-image: url(weding.jpeg);
     background-size: 290px;
 }
 
 .container #card4{
-    background-image: url(/img/graduate.jpeg);
+    background-image: url(graduate.jpeg);
     background-size: 280px;
 }
 
 .container #card5{
-    background-image: url(/img/event.webp);
+    background-image: url(event.webp);
     background-size: 660px;
 }
 
@@ -167,7 +161,7 @@ h2:hover{
 .container .card:hover .box2{
     transform:translateY(-50px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg,#f4f4f0,  rgba(30, 143, 255, 0.591));
+    background: linear-gradient(45deg,#f4f4f0,  rgba(134, 137, 142, 0.591));
 }
 
 .container .card .box2 .content{
@@ -228,7 +222,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
 }
 
 .container .card:hover .box2 .content a{
-    background:  dodgerblue;
+  background: rgb(121, 124, 130);
+ 
 }
 
 .courses{
@@ -255,7 +250,7 @@ border-radius: 20px
     position: absolute;
     width: 200px;
     height: 150%;
-    background: linear-gradient(dodgerblue,dodgerblue);
+    background: linear-gradient(rgb(223, 239, 255),rgb(223, 239, 255));
 animation: animate1 4s linear infinite;
 }
 
@@ -289,11 +284,8 @@ transform: rotate(360deg);
     max-width: 1200px;
     flex-wrap: wrap;
     padding: 40px 0;
-    margin-bottom: 100px;
-    
-    
-
 }
+
 
 .containerp .cardp
 {
@@ -394,10 +386,52 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
 .containerp .cardp:hover .box2p .contentp a{
     position: relative;
     z-index: 10;
-    background: dodgerblue;
+    background: rgb(121, 124, 130);
+  transition: 1s;
 }
 
+#enroll{
+  margin: 100px auto;
+  width: 80%;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(back5.jpg) ;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+  
+}
 
+#enroll h1{
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.enroll-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.enroll-btn:hover{
+  border: 1px solid dodgerblue;
+  background: dodgerblue;
+  transition: 1s;
+}
+
+.packageSection{
+  background: #333333;
+ }
+
+ .CoursesSection{
+   background: #333333;
+ }
 
 * {
     margin: 0;
@@ -442,9 +476,9 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
   
   /* Header Start */
   .mainHeader {
-    height: 90vh;
+    height: 100vh;
     background-size: 1200px;
-    background: url(/img/Vintage2.jpg) center center/cover no-repeat;
+    background: url(mainback.webp);
     position: relative;
   }
   
@@ -509,20 +543,16 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
   }
   /* Header End */
   
-  .packageSection{
-   background: #fff;
-  }
+ 
 
-  .CoursesSection{
-   background: #fff;  }
-
-  
+  /* footer */
   footer {
-  
+    
     position: relative;
     width: 100%;
     background: #3586ff;
     min-height: 100px;
+    margin-top: 300px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -612,7 +642,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
       background-position-x: 1000px;
     }
     100% {
-      background-position-x: 0px;
+      background-positon-x: 0px;
     }
   }
   
@@ -621,12 +651,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.02);
       background-position-x: -1000px;
     }
     100% {
-      background-position-x: 0px;
+      background-positon-x: 0px;
     }
   }
-  @media screen and (max-width: 400px) {
-
-    #navbar {
-        flex-direction: column;
-      }
-    }
