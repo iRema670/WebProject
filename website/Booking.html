@@ -1,0 +1,114 @@
+<!-- By: Jana Hani Sandeyouni - ID: 2112204 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" type="text/css" href="/css/styleBooking.css">
+
+    
+</head>
+<body>
+
+        <header>
+        <h1>Booking</h1>
+        <p>You are one step away from booking your course or backage.</p>
+    </header>
+
+<div class="MainNav">
+<ul>
+
+<li ><a class="FSection" href="#">Course Details</a></li>
+<li ><a class="SSection" href="#">Your Details</a></li>
+<li ><a class="TSection" href="#">Confirmation</a></li>
+
+</ul>
+
+</div>
+<div class="content">
+
+    <section id="section1">
+ <h2>Course Details</h2>
+ <p>After the user clicks on the word “Book” for each package and course, 
+    each unit of them has different information that comes to the page depending
+     on what was clicked, so I need to use JS to do it.</p>
+<a class="btnBack" href="Gallery.html" >Back</a>
+ <a class="btnNext" href="#section2" >Next</a>
+
+ 
+    </section>
+
+ <section id="section2">
+ 
+ <form>
+   <h3>Please complete this form to continue booking:</h3>
+   <p>
+              <label>Male</label>
+              <input required name = "howtosite" type = "radio"
+                   value = "Mr." checked>
+                  
+                   <label>female</label> 
+                   <input name = "howtosite" type = "radio" 
+                   value = "Mrs.">
+   </p>
+   <p>
+       <label>Name:
+           <input required name = "Name" > 
+           </label>
+   </p>   
+  
+   <p>
+       <label>age:
+           <select name = "age" > 
+               <option >-10</option>
+               <option>10-15</option>
+               <option>16-19</option>
+               <option selected>20+</option>
+           </select>
+           </label>
+   </p> 
+
+   <p>
+    <label>Email Address:
+        <input type="email" required name = "Email Address" minlength="3" 
+        maxlength="150" placeholder="E.g., m@j.com" 
+        pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}\.*[a-z-A-Z]*"> 
+        </label>
+</p> 
+   
+<p>
+    <label>Phone number:
+        <input type="tel" required  name= "number" placeholder="E.g.,055555550" 
+        pattern="[0-10]{10}" minlength="10" maxlength="10" > 
+        </label>
+</p> 
+   <p>
+       <label>Comments(optional):
+       <textarea name="Comments"
+       rows="5" cols="20">
+       </textarea>
+           </label>
+   </p> 
+
+
+   </form>
+   
+   <a class="btnBack" href="#section1" >Back</a>
+   <a class="btnNext" href="#section3" >Next</a>
+     
+    
+    </section>
+
+ <section id="section3">
+        <h2>Confirmation</h2>
+        <p>Are you sure about booking this package or course? Click on 
+            Confirm to get your receipt</p>
+        
+        <a class="btnBack" href="#section2" >Back</a>
+        <a class="btnCancel" href="Gallery.html" >Cancel</a>
+        <a class="btnNext" href="Receipt.html" >Confirm</a>
+           </section>
+</div>
+</body>
+</html>
