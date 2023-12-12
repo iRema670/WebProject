@@ -13,7 +13,7 @@ const pool = mysql.createPool({
 });
 
 //serving static website
-app.use("/", express.static("./index.html"));
+app.use("/", express.static("./website.html"));
 
 //Insert data route
 app.use(express.json());
