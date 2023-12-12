@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="./css/styleContact.css">
         <!--  stylesheets for icons :) -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
     </head>
 
     <body>
@@ -70,49 +71,49 @@
             <section class="Col right">
                 <h2>Or Send us messege...</h2>
                 <!-- Here is the form contents and fields -->
-                <form class="messegeFORM" action="https://formsubmit.co/pgcompany869@gmail.com" method="POST">
+                <form method="POST" id="messegeFORM">
                     <div class="inputGroup halfWidth">
-                        <input type="text" name="name" required="required">
+                        <input id="name" type="text" name="name" required="required">
                         <label>Enter Full Name</label>
                     </div>
                     <div class="inputGroup halfWidth">
-                        <input type="email" name="email" required="required">
+                        <input id="email" type="email" name="email" required="required">
                         <label>Your Email</label>
                     </div>
                     <div class="inputGroup fullWidth">
-						<input type="text" name="subject" required="required">
+						<input id="subject" type="text" name="subject" required="required">
 						<label>Subject</label>
 					</div>
 					<div class="inputGroup fullWidth">
-						<textarea required="required"></textarea>
+						<textarea id = "messege" required="required"></textarea>
 						<label>Your Messege here</label>
 					</div>
                     <div class="inputGroup halfWidth">
-                        <input type="tel" name="phone" required="required">
+                        <input id="phone" type="tel" name="phone" required="required">
                         <label>Mobile Number</label>
                     </div>
                     <div class="inputGroup halfWidth date">
-                        <input type="text" name="date-calender" onfocus="(this.type='date')" onblur="(this.type='text')" required="required">
+                        <input id="Birth" type="text" name="Birth-Date" onfocus="(this.type='date')" onblur="(this.type='text')" required="required">
                         <label>Date of Birth</label>
                     </div>
-                    <div class="halfWidth radio">
+                    <div id="halfWidth-radio">
                         <fieldset>
                             <legend>Gender</legend>
                             <label>
-                              <input type="radio" name="radio-button" value="M">
+                              <input class="Gender" type="radio" name="Gender" value="Male">
                               <span>Male</span>
                             </label>
                             <label>
-                              <input type="radio" name="radio-button" value="F">
+                              <input class="Gender" type="radio" name="Gender" value="Female">
                               <span>Female</span>
                             </label>
-                          </fieldset>
+                        </fieldset>
                     </div>
 
                     <div class="halfWidth lang">
                         <fieldset>
                         <legend>Language Preferences</legend>
-                        <select name="language">
+                        <select id="language" name="language">
                             <option value ="none">none</option>
                             <option value ="arabic">Arabic</option>
                             <option value ="english">English</option>
@@ -125,9 +126,13 @@
                     </fieldset>
                     </div>
 					<div class="inputGroup fullWidth">
-						<button>Send Message</button>
+						<button type="submit">Send Message</button>
 					</div>    
                 </form>
+                <div id="dataContainer">
+                    <h2>Data stored in DataBase</h2>
+                    <ul id="dataList"></ul>
+                  </div>
             </section>
         </main>
     </div>
@@ -145,5 +150,7 @@
             </div>       
         <p>&copy; All Rights Reserved :)</p>
       </footer>
+     <script src="JavaScript/Send"></script>
+     
     </body>
 </html>
