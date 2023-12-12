@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta name = "viewport" content="width=device-width , intiial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Contact Us</title> 
+        <link rel="stylesheet" type="text/css" href="./css/styleContact.css">
+        <!--  stylesheets for icons :) -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+
+    <body>
+    <header>
+        <div id="navbar">
+            <p>""</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About-us.html">About us</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Contact<span class="primary-text"> PG Cummunity</span> </h1>
+            <p>We'd love to hear from you! </p>
+            <a href="Booking.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </header>
+
+        <div class="container">
+        <main class="row">
+            <section class="Col left">
+                <div class="ContactTitle">
+                    <h2>Get In Touch</h2>
+                    <p>You can contact us via phone number, email us, and find our Location! </p>
+                </div>
+                <div class="contactInfo">
+                    <div class="IconsGroup">
+                        <div class="Icons">
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <div class="Details">
+                          <span>Phone</span>  
+                          <span>+966 123456789</span>
+                        </div>
+                    </div>
+                    <div class="IconsGroup">
+                        <div class="Icons">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="Details">
+                          <span>Email</span>  
+                          <span>PGC@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="IconsGroup">
+                        <div class="Icons">
+                            <i class='bx bx-current-location'></i>
+                        </div>
+                        <div class="Details">
+                          <span>Location</span>  
+                          <span>H5JJ+G8 Al Faisaliyyah, Jeddah Saudi Arabia</span>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <section class="Col right">
+                <h2>Or Send us messege...</h2>
+                <!-- Here is the form contents and fields -->
+                <form method="POST" id="messegeFORM">
+                    <div class="inputGroup halfWidth">
+                        <input id="name" type="text" name="name" required="required">
+                        <label>Enter Full Name</label>
+                    </div>
+                    <div class="inputGroup halfWidth">
+                        <input id="email" type="email" name="email" required="required">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+						<input id="subject" type="text" name="subject" required="required">
+						<label>Subject</label>
+					</div>
+					<div class="inputGroup fullWidth">
+						<textarea id = "messege" required="required"></textarea>
+						<label>Your Messege here</label>
+					</div>
+                    <div class="inputGroup halfWidth">
+                        <input id="phone" type="tel" name="phone" required="required">
+                        <label>Mobile Number</label>
+                    </div>
+                    <div class="inputGroup halfWidth date">
+                        <input id="Birth" type="text" name="Birth-Date" onfocus="(this.type='date')" onblur="(this.type='text')" required="required">
+                        <label>Date of Birth</label>
+                    </div>
+                    <div id="halfWidth-radio">
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <label>
+                              <input class="Gender" type="radio" name="Gender" value="Male">
+                              <span>Male</span>
+                            </label>
+                            <label>
+                              <input class="Gender" type="radio" name="Gender" value="Female">
+                              <span>Female</span>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="halfWidth lang">
+                        <fieldset>
+                        <legend>Language Preferences</legend>
+                        <select id="language" name="language">
+                            <option value ="none">none</option>
+                            <option value ="arabic">Arabic</option>
+                            <option value ="english">English</option>
+                            <option value ="french">French</option>
+                            <option value="japanese">Japanese</option>
+                            <option value ="italian">Italian</option>
+                            <option value ="korean">Korean</option>
+                            <option value ="russian">Russian</option>
+                        </select> 
+                    </fieldset>
+                    </div>
+					<div class="inputGroup fullWidth">
+						<button type="submit">Send Message</button>
+					</div>    
+                </form>
+                <div id="dataContainer">
+                    <h2>Data stored in DataBase</h2>
+                    <ul id="dataList"></ul>
+                  </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+            <div class="socialGroup">
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            </div>       
+        <p>&copy; All Rights Reserved :)</p>
+      </footer>
+     <script src="JavaScript/Send"></script>
+     
+    </body>
+</html>
